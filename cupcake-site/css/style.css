@@ -1,0 +1,112 @@
+body {
+    background-color: #FFF9F2;
+    margin: 0; /*removes defult margin*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7B4B3A;
+}
+/*---  nav bar --- */
+nav {
+    background-color: #FADADD;
+    display: flex; /*flexbox layout*/
+    align-items: center; /*vertically center items*/
+    border-radius: 15px; /* rounded corners */ 
+    margin: 15px; /* margin around navbar */
+    padding: 0 16px; /* padding inside navbar */
+}
+
+nav img {
+    height: 60px; /* set logo image height */
+    width: auto; /* aspect ratio shenanigans */
+    margin-right: 20px; /* space between logo and textto the right */
+}
+
+nav ul {
+    list-style-type: none; /* get rid of bullets*/
+    margin: 0;
+    padding: 0;
+    display: flex; /*flex layout for links*/
+}
+
+nav li {
+    padding: 14px 16px; /*padding around each link*/
+    cursor: pointer; /* pointer for user*/
+}
+
+nav li a {
+    padding: 14px 16px;
+    text-decoration: none; /*text colour */
+    font-weight:bold;
+    color:#7B4B3A;
+}
+
+nav li a:hover { /*makes the colours change on hover */
+    background-color: #7B4B3A;
+    color: #FADADD;
+    border-radius: 15px;
+}
+
+/*---  index --- */
+#hero {
+    display: block; /*makes it a block element - gives it its own line */
+    margin: 0 auto;
+    width: 80%;
+    height: 494px;
+    object-fit: cover; /*gets rid of distortions but makes it fit the box */
+    border-radius: 15px;
+  }
+  
+  .hero-section {
+    width: 80%; /*section width*/
+    margin: 0 auto;
+    text-align: center; /*center text*/
+    color: #7B4B3A;
+  }
+  
+  .hero-section h1 {
+    font-size: 2em; /*increases font sizing*/
+    margin-top: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 10px auto; /*center and space */
+  }
+
+
+
+/*---  cupcakes --- */
+
+.parent {
+    display: grid; /*grid layout*/
+    grid-template-columns: repeat(3, 1fr); /*3 equal columns*/
+    gap: 20px; /*space between columns */
+    width: 90%;
+    margin: 20px auto; /* center grid and space it out*/
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /*adds a shadow*/
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color:#FADADD ;
+}
+.card img {
+    width: 100%;
+    height: 494px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3,
+.card p {
+    margin: 10px 0 5px;
+}
